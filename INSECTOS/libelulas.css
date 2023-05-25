@@ -251,7 +251,10 @@
         font-weight: bold;
         text-transform: uppercase;
     }
-
+    .nombre__parrafo{
+        font-size: 0.5rem;
+        width: 95%;
+    }
     .pieDePagina__parrafo{
         font-size: 0.9rem;
     }
@@ -279,7 +282,7 @@
         width:auto;
     }
     .nombre__titulo{
-        font-size: 0.5rem;
+        font-size: 1.2rem;
     }
     .nombre__cientifico{
         font-weight: normal;
@@ -290,7 +293,7 @@
         text-transform: none;
     }
     .nombre__parrafo{
-        font-size: 0.2rem;
+        font-size: 0.5rem;
         width: 95%;
     }
 
@@ -298,7 +301,7 @@
         padding: 0.2rem 0rem 0rem 0rem;
     }
     .pieDePagina__parrafo{
-        font-size: 0.2rem;
+        font-size: 0.5rem;
         width: auto;
         font-weight: normal;
     }
