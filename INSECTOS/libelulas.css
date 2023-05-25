@@ -1,0 +1,306 @@
+
+:root {
+    --colorBody:#0e1e4e;          
+    --colorEncabezado:#100c08; 
+    --colorTitulo:#f5f5f1;
+    --colorListas:#a1c6ea;
+    --colorEncabezado__Titulo:#ff0000;
+    --colorCientifico:#222222;
+    --colorMedia960 :#d0d015;
+    --colorMedia769:#6d1a3d;
+    --colorMedia540:yellowgreen;
+    --colorMedia365:#a9a9a9;
+}
+
+.cuerpo{
+    background:var(--colorBody);
+}
+.encabezado{
+    height: 100px;
+    background: var(--colorEncabezado);      
+}
+.encabezado__titulo{
+    color:#ff0000;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.flexContainer{
+    width: 100%;
+}
+.flexContainer__ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+    margin: 15px 0px;      
+}
+
+.ul__listas{
+    background:var(--colorListas);
+    height: 450px; 
+    width: 23%;   
+    margin: 10px 0px 0px 0px;
+     
+}
+
+.nombre__titulo{
+    color:var(--colorEncabezado__Titulo);
+    text-align: center;
+    font-size:1.3rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    margin: 0px 10px 10px 10px;
+    padding-top: 5px;
+}
+.nombre__cientifico{
+
+    color: var(--colorCientifico);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;    
+    font-size: 0.7rem;    
+    margin-left: 10px;
+    height: 5%;
+}
+
+.nombre__nombre{
+
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 0.7rem;
+    height: 5%;    
+}
+
+.nombre__parrafo{
+    color:var(--colorCientifico);
+    margin-left: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+    font: size 0.9rem;
+    text-align: justify;
+    height: 20%;
+    margin: 10px 10px 10px 10px;
+}
+
+.nombre__bekko{
+    height: 45%;
+    background-image: url(./insectos/Bekko.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px;
+}
+.nombre__viuda{
+    height: 45%;
+    background-image: url(./insectos/luctuosa.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px;
+}
+.nombre__flameada{
+    height: 45%;
+    background-image: url(./insectos/saturata.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px;
+}
+.nombre__neon{
+    height: 45%;
+    background-image: url(./insectos/croecipennis.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px;
+}
+.nombre__arrebolada{
+    height: 45%;
+    background-image: url(./insectos/espinosa.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px;
+}
+.nombre__ocellata{
+    height: 45%;
+    background-image: url(./insectos/ocellata.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px;
+}
+.nombre__verdes{
+    height: 45%;
+    background-image: url(./insectos/zurcidora.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px;
+}
+.nombre__dama{
+    height: 45%;
+    background-image: url(./insectos/belladama.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px;
+}
+
+.pieDePagina{
+    height: 150px;
+    background-color: var(--colorEncabezado); 
+}
+.pieDePagina__div{
+    padding: 10px;
+}
+.pieDePagina__parrafo{
+    color: var(--colorTitulo);
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 0.4rem;
+}
+@media screen and (max-width:960px) {
+
+    .cuerpo{
+        background-color:var(--colorMedia960);
+    }
+    .nombre__titulo{
+        font-size:0.9rem;
+    }
+    .nombre__parrafo{
+        font-size: 0.5rem;
+    }
+    .nombre__nombre{
+        font-size: 0.1rem;
+        font-weight: normal;
+    }
+    .flexContainer__ul{
+        display: flex;
+        flex-direction:row;
+        width: 100%;
+    }
+    .ul__listas{
+        width: 30%;
+    }    
+}
+
+@media screen and (max-width:769px) {
+
+ .cuerpo{
+        background-color:var(--colorMedia769);
+    }
+    .nombre__titulo{
+        
+    }        
+    .encabezado__titulo{
+        
+    }
+    .nombre__cientifico{
+       font-size: 1rem;
+       font-weight: normal;
+       text-transform:none;
+    }
+    .nombre__nombre{
+        font-size: 1rem;
+        font-weight: normal;
+        text-transform: none;
+        width: 95%;
+    }
+    .nombre__parrafo{
+        font-size: 0.5rem;
+    }
+    .pieDePagina__parrafo{
+        
+    }
+    .flexContainer{       
+        width: 100%;
+    }
+    .flexContainer__ul{
+        display: flex;
+        flex-wrap: wrap;        
+        margin: auto;
+    }
+    .ul__listas{      
+        width: 40%;  
+        margin: 1.5rem 0.2rem 1.5rem 0.2rem;   
+    }    
+}
+@media  screen and (max-width:540px) {
+    .cuerpo{
+        background-color:var(--colorMedia540);
+    }
+    .encabezado__titulo{
+        font-size: 2rem;
+    }
+    .flexContainer{
+        width: 100%;
+    }
+    .flexContainer__ul{
+        display: flex; 
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+    .ul__listas{                    
+        width:auto;
+    }
+    .nombre__titulo{
+        font-size: 1.2rem;
+    }
+    .nombre__cientifico{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .nombre__nombre{
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .pieDePagina__parrafo{
+        font-size: 0.9rem;
+    }
+    
+}
+
+@media screen and (max-width: 365px) {
+
+.cuerpo{
+        background-color:var(--colorMedia365);
+    }
+    .encabezado__titulo{
+        font-size: 1.4rem;
+    }
+    .flexContainer{
+        width: 100%;
+    }
+    .flexContainer__ul{
+        display: flex; 
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+    .ul__listas{                    
+        width:auto;
+    }
+    .nombre__titulo{
+        font-size: 0.5rem;
+    }
+    .nombre__cientifico{
+        font-weight: normal;
+    }
+    .nombre__nombre{
+        font-size: 1rem;
+        font-weight: normal;
+        text-transform: none;
+    }
+    .nombre__parrafo{
+        font-size: 0.2rem;
+        width: 95%;
+    }
+
+    .pieDePagina__div{
+        padding: 0.2rem 0rem 0rem 0rem;
+    }
+    .pieDePagina__parrafo{
+        font-size: 0.2rem;
+        width: auto;
+        font-weight: normal;
+    }
+    
+}
